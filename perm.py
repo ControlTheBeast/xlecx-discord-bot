@@ -3,7 +3,7 @@ import json
 
 class Perm:
 
-    guild = [928653462353371137]  # The guild(s) this bot should be active in. Only tested with two!
+    guild = []  # The guild(s) this bot should be active in. Only tested with two!
 
     active_embeds: list = []  # The currently active embeds, dont change this
 
@@ -26,24 +26,24 @@ class Perm:
 
     max_loaded_comics = 10  # Yea, dont change this
 
-    bot_updates_channel = {"928653462353371137": 938258359142998116}  # The guild: channel where the bot should post updates
+    bot_updates_channel = {"": }  # The guild: channel where the bot should post updates
 
-    bot_report_channel = {"928653462353371137": 928653462353371140}  # The guild: channel where the bot should send reports to
+    bot_report_channel = {"": }  # The guild: channel where the bot should send reports to
 
     report_messages = {}  # "message_id": "message parameters", all active report messages
 
     roles = {
-             "928653462353371137": [939202545346301952]}  # Server roles that overwrite permissions
+             "": []}  # Server roles that overwrite permissions
     everyone_roles = {  # Server roles that dont overwrite permissions
-        "928653462353371137": [928653462353371137],
-        "924028009609068596": [924028009609068596]
+        "": [],
+        "": []
     }
     # "server_id": ["role ids that are allowed"]
-    guild_owners = {"928653462353371137": 149584269495369729}   # Guild: Owner ID
+    guild_owners = {"": }   # Guild: Owner ID
 
     denied_roles = {}  # Guild: Denied role ID
 
-    bot_updates_enabled = {"928653462353371137": True}  # Guild: True/False
+    bot_updates_enabled = {"": True}  # Guild: True/False
 
     search_limit = 15  # Dont change unless site changes it
 
